@@ -1,0 +1,19 @@
+<suite name="ParallelTests" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.qaautomation.tests.TextBoxTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.qaautomation.tests.TextBoxTest"/>
+        </classes>
+    </test>
+</suite>
