@@ -1,0 +1,24 @@
+name: UI Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Repo'yu çek
+        uses: actions/checkout@v3
+
+      - name: ☕ Java'yı kur
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: 📦 Maven ile testleri çalıştır
+        run: mvn clean test
