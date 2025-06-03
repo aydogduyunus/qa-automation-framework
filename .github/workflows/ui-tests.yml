@@ -22,3 +22,4 @@ jobs:
 
       - name: 📦 Maven ile testleri çalıştır
         run: mvn clean test
+        working-directory: ui-tests
