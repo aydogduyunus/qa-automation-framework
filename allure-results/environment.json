@@ -1,0 +1,8 @@
+{
+  "Browser": "Chrome",
+  "Browser.Version": "125",
+  "Java.Version": "17",
+  "OS": "macOS",
+  "Test Environment": "DemoQA UI",
+  "DB": "PostgreSQL"
+}
